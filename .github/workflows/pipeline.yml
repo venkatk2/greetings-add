@@ -82,5 +82,6 @@ jobs:
      - name: Execute test
        shell: bash
        run: | 
-         chmod +x ./test-script.sh./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
+         chmod +x ./test-script.sh
+         ./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
 
