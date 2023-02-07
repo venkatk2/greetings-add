@@ -77,9 +77,6 @@ jobs:
        uses: actions/download-artifact@v3       
        with:
          name: greetings-jar
-         path: 
-            build/libs
-            test-script.sh
         
      - name: Execute test
        shell: bash
