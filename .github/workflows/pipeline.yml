@@ -80,4 +80,4 @@ test-run:
        shell: bash
        run: | 
          chmod +x ./test-script.sh
-     ./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
+         ./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
